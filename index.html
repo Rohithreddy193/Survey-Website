@@ -133,20 +133,20 @@
         <script>
             function toggleDropdown(selectElement) {
                 const dropdown = document.getElementById('optionsDropdown');
-                const secondDropdown = document.getElementById('topdrugsid'); // Corrected ID
+                const secondDropdown = document.getElementById('topdrugsid'); 
         
                 if (selectElement.value === 'Yes') {
                     dropdown.style.display = 'block';
-                    secondDropdown.value = 'blank'; // Reset the second dropdown when Yes is selected
+                    secondDropdown.value = 'blank'; 
                 } else {
                     dropdown.style.display = 'none';
-                    // Reset topdrugs value when No is selected
+                    
                     document.querySelector('[name="topdrugs"]').value = 'blank';
                 }
             }
         
             function handleSecondDropdownChange(secondDropdown) {
-                // Handle changes in the second dropdown if needed
+                
             }
         </script>
 
@@ -239,27 +239,27 @@
     <script src="Survey.js"></script>
 
     <script>
-        // Function to display alert after form submission
+        
         function handleSubmit() {
-            // Assuming your form has an ID of "SurveyForm"
+            
             var form = document.getElementById('SurveyForm');
     
-            // Adding an event listener for form submission
+          
             form.addEventListener('submit', function(event) {
-                // Preventing the default form submission behavior
+               
                 event.preventDefault();
     
-                // Here you can add code to save the form data to your database or perform any other actions
+                
     
-                // Displaying an alert after successful submission
+                
                 alert('Record saved! Thanks for your participation.');
                 
-                // Resetting the form after submission
+                
                 form.reset();
             });
         }
     
-        // Calling the handleSubmit function to set up the event listener
+       
         handleSubmit();
     </script>
 </body>
