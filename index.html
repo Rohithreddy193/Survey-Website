@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rohith">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta name="description" content="This Page is about Tacos and its shop">
+    <meta name="viewport" content="width=device-width, initial-Scale=1">
+    <title>Mental Health Substance and Behavioral Survey</title>
+    <link rel="icon" href="images/survey-icon-19210.png" type="image/x-icon">
+    <link rel="stylesheet" href="survey.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="icon-1">
+        <img src="images/Safe Welness services logo-01.png" alt="Hype" height="140px" width="250px">
+    </div>
+    <header>
+        <div class="overlay">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,800&display=swap" rel="stylesheet">
+            <h1>Mental Substance And Behavioral Health Survey</h1>
+            <h3>About Survey</h3>
+            <br>
+            <p>In a world grappling with evolving challenges and increased awareness of mental health, the "Mental Substance and Behavioral Health Survey" emerges as a vital tool for understanding the intricate relationship between mental well-being and behavior. This survey aims to shed light on the profound interplay between the mind's intricacies and how it influences human actions, reactions, and coping mechanisms. With a focus on garnering valuable insights into the diverse facets of behavioral health, this survey seeks to uncover the hidden dimensions of mental substance, offering a comprehensive view of the factors shaping mental well-being. Through this survey, we endeavor to foster a deeper understanding of the human psyche and pave the way for improved interventions and support systems in the realm of mental health.</p>
+            <br>
+            <br>
+        </div>
+    </header>
+    <br>
+    <div class="container">
+    <form action="" id="SurveyForm">
+        <div id="box1"><h2>Personal Information:-</h2>
+            <br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="14" max="18" required>
+            <br>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" requiured>
+            <option value="blank"></option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Others">Others</option>
+        </select>
+            <br>
+
+            <label for="location">Location:</label>
+            <select id="location" name="location" required>
+                <option value="blank"></option>
+                <option value="Dearborn Public School">Dearborn Public School</option>
+                <option value="Wayne/Westland School">Wayne/Westland Public School</option>
+                <option value="Crestwood">Crestwood Public School</option>
+                <option value="Others">Others</option>
+            </select>
+            <br>
+
+            <label for="seekhelp">Have you ever sought professional help for mental health issues?</label>
+            <input type="radio" id="seekhelp" name="seekhelp" value="Yes">
+            <label for="seekhelp">Yes</label>
+            <input type="radio" id="seekhelp" name="seekhelp" value="No">
+            <label for="seekhelp">No</label>
+            <br>
+
+            <label for="knowledgeable">Do you feel knowledgeable about mental health conditions and available resources?</label>
+            <input type="radio" id="knowledgeable" name="knowledgeable" value="Yes">
+            <label for="knowledgeable">Yes</label>
+            <input type="radio" id="knowledgeable" name="knowledgeable" value="No">
+            <label for="knowledgeable">No</label>
+            <br>
+
+            <label for="experienced-challenges">Have you personally experienced mental health challenges?</label>
+            <input type="radio" id="experienced" name="experienced" value="Yes">
+            <label for="experienced">Yes</label>
+            <input type="radio" id="experienced" name="experienced" value="No">
+            <label for="experienced">No</label>
+            <br>
+        </div>
+        <br>
+        <h2>Behavioral Health and Substance Use:-</h2>
+        <br>
+            
+        <label>Have you experienced any behavioral health issues?</label><br>
+        <select id="Behavioral" name="Behavioral" onchange="toggleOtherTextarea()">
+            <option value="blank"></option>
+            <option value="Anxiety Disorder">Anxiety Disorder</option>
+            <option value="Depression">Depression</option>
+            <option value="Substance Abuse">Substance Abuse</option>
+            <option value="Panic Disorder">Panic Disorder</option>
+            <option value="OCD">OCD</option>
+            <option value="other">Other</option>
+        </select>
+        
+        <textarea id="otherInput" name="otherInput" style="display: none;"></textarea>
+        
+        <script>
+            function toggleOtherTextarea() {
+                var behavioralSelect = document.getElementById('Behavioral');
+                var otherInput = document.getElementById('otherInput');
+        
+                if (behavioralSelect.value === 'other') {
+                    otherInput.style.display = 'block';
+                } else {
+                    otherInput.style.display = 'none';
+                }
+            }
+        </script>
+        <br>
+        <label for="substance-abuse">Have you struggled with substance or drug Abuse?</label>
+        <select id="substanceid" name="substance" onchange="toggleDropdown(this)">
+            <option value="blank"></option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <div id="optionsDropdown" style="display: none;">
+            <label for="dropdown">If Yes Please Select</label>
+            <select id="topdrugsid" name="topdrugs" onchange="handleSecondDropdownChange(this)">
+                <option value="blank"></option>
+                <option value="Alcohol">Alcohol</option>
+                <option value="Tobacco">Tobacco</option>
+                <option value="Heroin">Heroin</option>
+                <option value="Marijuana">Marijuana</option>
+                <option value="Ketamine">Ketamine</option>
+                <option value="Molly">Molly</option>
+                <option value="LSD">LSD</option>
+                <option value="Cocaine">Cocaine</option>
+                <option value="Benzodiazepines">Benzodiazepines</option>
+            </select>
+        </div>
+        
+        <script>
+            function toggleDropdown(selectElement) {
+                const dropdown = document.getElementById('optionsDropdown');
+                const secondDropdown = document.getElementById('topdrugsid'); // Corrected ID
+        
+                if (selectElement.value === 'Yes') {
+                    dropdown.style.display = 'block';
+                    secondDropdown.value = 'blank'; // Reset the second dropdown when Yes is selected
+                } else {
+                    dropdown.style.display = 'none';
+                    // Reset topdrugs value when No is selected
+                    document.querySelector('[name="topdrugs"]').value = 'blank';
+                }
+            }
+        
+            function handleSecondDropdownChange(secondDropdown) {
+                // Handle changes in the second dropdown if needed
+            }
+        </script>
+
+        <br>
+        <br>
+        <h2>Suicide:-</h2><br>
+        <label for="suicidal">Have ever experienced thoughts of suicide?</label>
+        <select id="suicidal" name="suicidal" required>
+            <option value="blank"></option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Prefer Not to Answer">Prefer Not To Answer</option>
+        </select>
+        <br>
+        <label for="knowwhere">If you are experiencing thoughts of suicide, would you know where to seek help?</label>
+        <select id="knowwhere" name="knowwhere" required>
+            <option value="blank"></option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Unsure">Unsure</option>
+        </select>
+        <br>
+        <br>
+        <h2>Other:-</h2>
+        </select><br>
+        <label for= "sleep">How many Hours do you Sleep Everyday?</label>
+        <select id="sleep" name="sleep" required>
+            <option value="blank"></option>
+            <option value="Below 5hrs">Below 5hrs</option>
+            <option value="5 to 6hrs">5 to 6hrs</option>
+            <option value="6 to 8hrs">6 to 8hrs</option>
+            <option value="Above 8hrs">Above 8hrs</option>
+        </select>
+        <br>
+        <label for="Caffeine">What is your Caffeine intake per weekly?</label>
+        <select id="caffeine" name="caffeine" required>
+            <option value="blank"></option>
+            <option value="Everyday">Everyday</option>
+            <option value="1-3 times per week">1-3 times per week</option>
+            <option value="3-5 times per week">3-5 times per week</option>
+            <option value="No intake at all">No intake at all</option>
+        </select>
+        <br>
+        <br>
+        <h2>Treatment:-</h2>
+        <br>
+        
+        <label>What are some coping mechanisms or activities you or someone you know engage in while dealing with stress, mental health, or drug use challenges like?</label><br>
+        <select id="copingMechanisms" name="copingMechanisms" onchange="toggleOtherTextbox()">
+            <option value="blank"></option>
+            <option value="Meditation">Meditation</option>
+            <option value="Stress Managment">Stress Management</option>
+            <option value="Regular Exercise">Regular Exercise</option>
+            <option value="Social connection">Social connection</option>
+            <option value="professional Help">Professional Help</option>
+            <option value="other">Other</option>
+        </select>
+        <div id="othertext" style="text-align: center;">
+            <input type="text" id="otherTextbox" name="otherTextbox" style="display: none;" placeholder="Specify">
+        </div>
+        
+        <script>
+            function toggleOtherTextbox() {
+                var copingMechanisms = document.getElementById("copingMechanisms");
+                var otherTextbox = document.getElementById("otherTextbox");
+                otherTextbox.style.display = copingMechanisms.value === "other" ? "block" : "none";
+            }
+        </script>
+
+        <label for="treatment">Have you received treatment for behavioral and drug use issues?</label>
+        <select id="treatment" name="treatment" required>
+            <option value="blank"></option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <br>
+        <label for="education">Have you attended any mental health, behavioral health, or substance education programs or events?</label>
+        <select id="education" name="education" required>
+            <option value="blank"></option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="Survey.js"></script>
+
+    <script>
+        // Function to display alert after form submission
+        function handleSubmit() {
+            // Assuming your form has an ID of "SurveyForm"
+            var form = document.getElementById('SurveyForm');
+    
+            // Adding an event listener for form submission
+            form.addEventListener('submit', function(event) {
+                // Preventing the default form submission behavior
+                event.preventDefault();
+    
+                // Here you can add code to save the form data to your database or perform any other actions
+    
+                // Displaying an alert after successful submission
+                alert('Record saved! Thanks for your participation.');
+                
+                // Resetting the form after submission
+                form.reset();
+            });
+        }
+    
+        // Calling the handleSubmit function to set up the event listener
+        handleSubmit();
+    </script>
+</body>
+</html>

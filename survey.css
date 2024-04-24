@@ -1,0 +1,211 @@
+*{padding: 0;margin: 0; box-sizing: border-box;}
+header{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0 85% 85% / 30%;
+    font-family: 'DM Sans', sans-serif;
+    background: url("images/pain-mental-health-neuroscuece.webp");
+}
+
+
+
+header{ 
+    width: 100%;
+    height: 50%;
+    padding: 40px;
+    color: black;
+    text-shadow: 1px 1px 1px #100f0f;
+    background-image: linear-gradient( 70deg, #b15be669 10%, #cf9d826b 100%);
+
+}
+
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+}
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: #333;
+    background: #fff;
+    margin-bottom: 50px;
+    box-shadow: 0 3px 20px #0000003b;
+}
+button.hover{
+    cursor: pointer;
+}
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+
+body {
+    text-align: center;
+    background-color: whitesmoke;
+    line-height: 2.0;
+    font-family: serif;
+    background-color: white;
+    font-size: large;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: larger;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #b36060;
+  }
+
+.icon-1 {
+    text-align: left;
+    background-color: whitesmoke;
+    text-decoration: none;
+    display: block;
+    padding: 15px 16px;
+    background-size: contain;
+    font-size: x-large;
+    background-position: 0px;
+    top: 5px;
+}
+.icon-1.social-media {
+    text-align: center;
+    top: 0px;
+    font-size: x-large;
+}
+.icon-1 p {
+    text-align: right;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    position: absolute;
+    top: 20px;
+    right: 60px;
+}
+
+
+.submit1 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: none;
+    outline: none;
+    margin-bottom: 50%;
+    
+}
+
+
+
+
+textarea {
+    width: 50px auto;
+    height: auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input {
+    width: 50px;
+}
+
+.oursponsers {
+    background-color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:xx-large;
+}
+
+.footersocial {
+    background-color: whitesmoke;
+    padding: 40px;
+    text-align: center;
+    bottom: 20px;
+
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-whatsapp {
+    background: green;
+    color: white;
+}
+
+.sidebar {
+    text-align: left;
+}
+
+#otherInput {
+    display: block;
+    margin: auto; /* Add this line to center the text input */
+    text-align: left; /* Add this line to center-align the text inside the input */
+    width: 200px;
+    font-size: large;
+}
+
+#otherTextbox {
+    display: block;
+    margin: auto;
+    text-align: left;
+    width: 200px;
+    font-size: large;
+}
